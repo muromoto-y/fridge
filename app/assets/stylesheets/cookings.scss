@@ -19,9 +19,9 @@
     background-position: top center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 5vh 15vw;
+    padding: 5vh 5vw;
     color: #fff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
@@ -38,7 +38,51 @@
 
 
 .search-input{
-  width: 100%;
+  width: 70%;
   height: 4.5vh;
   padding-left: 5px;
+}
+
+.feature{
+  
+}
+
+.feature-title{
+  font-size: 5vh;
+  text-decoration : underline;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image{
+  width: 33vh;
+  height: 33vh;
+}
+
+.list-text {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 50px;
+  width: 33vh;
+}
+
+
+.feature-list-description {
+  font-size: 18px;
+  margin-top: 20px;
+  width: 33vh;
 }
