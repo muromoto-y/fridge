@@ -1,24 +1,46 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column    | Type   | Options     |
+| --------- | ------ | ----------- |
+| nick_name | string | null: false |
+| email     | string | null: false |
+| password  | string | null: false |
 
-* Ruby version
 
-* System dependencies
+### Association
+- has_many :cooking
 
-* Configuration
 
-* Database creation
+## cooking テーブル
 
-* Database initialization
+| Column       | Type       | Options           |
+| ------------ | ---------- | ----------------- |
+| cooking_name | string     | null: false       |
+| explanation  | text       | null: false       |
+| ingredients1 | string     | null: false       |
+| quantity1    | string     | null: false       |
+| ingredients2 | string     | null: false       |
+| quantity2    | string     | null: false       |
+| ingredients3 | string     | null: false       |
+| quantity3    | string     | null: false       |
+| ingredients4 | string     | null: false       |
+| quantity4    | string     | null: false       |
+| ingredients5 | string     | null: false       |
+| quantity5    | string     | null: false       |
+| ingredients6 | string     | null: false       |
+| quantity6    | string     | null: false       |
+| ingredients7 | string     | null: false       |
+| quantity7    | string     | null: false       |
+| ingredients8 | string     | null: false       |
+| quantity8    | string     | null: false       |
+| ingredients9 | string     | null: false       |
+| quantity9    | string     | null: false       |
+| ingredients0 | string     | null: false       |
+| quantity0    | string     | null: false       |
+| user         | references | foreign_key: true |
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
