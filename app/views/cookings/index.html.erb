@@ -1,1 +1,23 @@
-aaa
+<div class='header'>
+  <%= link_to image_tag("gobou.png", size: '150x40'), "/" %>
+
+  <ul class='login-out'>
+    <%# <% if user_signed_in? %>
+      <%# <li><%= link_to current_user.nick_name, "", class: "nickname" %></li>
+      <%# <li><%= link_to image_tag("logout.png", class: "logout-icon"), destroy_user_session_path, method: :delete, class: "logout" %></li>
+    <%# <% else %> 
+      <li><%= link_to image_tag("login.png", class: "login-icon"), "new_user_session_path", class: "login" %></li>
+    <%# <% end %>
+  </ul>
+</div>
+
+<div class='title-contents'>
+  <h3 class='title'>
+    Fridge!で冷蔵庫を整理しよう！！
+  </h3>
+  <%= form_with(url: "", method: :get, class: "search", local: true) do |f| %>
+    <%= f.text_field :keyword, placeholder: "料理名、材料", class: "search-input" %>
+    <%= f.submit "レシピ検索", class: "search-btn" %>
+  <% end %>
+</div>
+
