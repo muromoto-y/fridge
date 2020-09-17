@@ -34,7 +34,7 @@
       <h3 class='list-text'>
         余った食材で検索
       </h3>
-      <p class='feature-list-description'>
+      <p class='list-description'>
         検索した食材を使ったレシピを一覧表示できます。
       </p>
     </li>
@@ -43,7 +43,7 @@
       <h3 class='list-text'>
         自分のレシピを教える
       </h3>
-      <p class='feature-list-description'>
+      <p class='list-description'>
         検索はもちろん自分のレシピをアップすることができます。
       </p>
     </li>
@@ -52,8 +52,31 @@
       <h3 class='list-text'>
         お気に入りに保存
       </h3>
-      <p class='feature-list-description'>
+      <p class='list-description'>
         お気に入りに保存したレシピをすぐに見る事ができます。
       </p>
     </li>
   </ul>
+</div>
+
+
+<div class='show'>
+  <h2 class='show-title'>
+    〜最新レシピ〜
+  </h2>
+  <%= link_to '新規投稿商品', "new_cooking_path" , class: "subtitle" %>
+  <ul class='cooking-list'>
+    <% @cookings.each do |cooking| %>
+      <li class='show-list'>
+        <%= link_to cooking_path(cooking) do %>
+          <div>
+            <%= image_tag cooking.image, class: "item-img" %>
+          </div>
+          <h3 class='cooking-name'>
+            <%= cooking.cooking_name %>
+          </h3>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
