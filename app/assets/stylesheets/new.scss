@@ -1,0 +1,97 @@
+.login-all{
+  height: 100vh;
+  width: 100vw;
+  background-image: image-url('login-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rogo-login{
+  margin-top: 5vh;
+  margin-bottom: 14vh;
+}
+
+.login-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 3vh;
+  font-family: 'Comic Sans MS'
+}
+  
+.login-title{
+  padding: 2vh 
+}
+
+.login-signup{
+  margin: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form{
+width: 100%;
+margin-top: 5px;
+height: 20px;
+padding: 3px 5px 3px;
+border: 1.5px solid grey;
+background: #fff;
+font-size: 16px;
+resize: none;
+border-radius:10px;
+}
+
+.go{
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vh;
+}
+
+
+
+.login-btn {
+  width: 100%;
+  background-color: #69f3e8;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  border: 1px solid gray;
+  color: #fff;
+  line-height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius:10px;
+  color: gray;
+  margin-bottom: 7vh;
+}
+.login-btn:hover {
+  background-color: #24e779;
+}
+
+
+
+.signup-all{
+  height: 100vh;
+  width: 100vw;
+  background-image: image-url('signup-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rogo-signup{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}

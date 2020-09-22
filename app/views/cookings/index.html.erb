@@ -2,12 +2,12 @@
   <%= link_to image_tag("gobou.png", size: '150x40'), "/" %>
 
   <ul class='login-out'>
-    <%# <% if user_signed_in? %>
-      <%# <li><%= link_to current_user.nick_name, "", class: "nickname" %></li>
-      <%# <li><%= link_to image_tag("logout.png", class: "logout-icon"), destroy_user_session_path, method: :delete, class: "logout" %></li>
-    <%# <% else %> 
-      <li><%= link_to image_tag("login.png", class: "login-icon"), "new_user_session_path", class: "login" %></li>
-    <%# <% end %>
+    <% if user_signed_in? %>
+      <li><%= link_to current_user.nick_name, "", class: "nickname-top" %></li>
+      <li><%= link_to image_tag("logout.png", class: "logout-icon"), destroy_user_session_path, method: :delete, class: "logout" %></li>
+    <% else %> 
+      <li><%= link_to image_tag("login.png", class: "login-icon"), new_user_session_path, class: "login" %></li>
+    <% end %>
   </ul>
 </div>
 
@@ -64,7 +64,7 @@
   <h2 class='show-title'>
     〜最新レシピ〜
   </h2>
-  <%= link_to '新規投稿商品', "new_cooking_path" , class: "subtitle" %>
+  <%= link_to 'レシピ投稿', "new_cooking_path" , class: "subtitle" %>
   <ul class='cooking-list'>
     <% @cookings.each do |cooking| %>
       <li class='show-list'>

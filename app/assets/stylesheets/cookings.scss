@@ -4,6 +4,27 @@
 
 .login-out{
   list-style: none;
+  display: flex;
+}
+
+.nickname-top{
+  font-family: 'arial unicode ms';
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  font-size: 3vh;
+  margin-right: 15px;
+  text-shadow:
+    0.1px 0 0 black,
+    0 0.1px 0 black,
+    -0.1px 0 0 black,
+    0 -0.1px 0 black
+}
+.nickname-top:hover {
+  color: lawngreen;
 }
 
 .login-icon{
@@ -12,22 +33,23 @@
 }
 
 .title-contents{
-    height: 40vh;
-    background-image: image-url('reizouko.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5vh 5vw;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  height: 40vh;
+  background-image: image-url('reizouko.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .title{
-  font-size: 6vh;
+  font-size: 7vh;
+  font-family: 'arial unicode ms'
 }
 
 .search{
@@ -45,10 +67,11 @@
 
 .feature{
   margin-top: 10vh;
+  font-family: 'arial unicode ms'
 }
 
 .feature-title{
-  font-size: 5vh;
+  font-size: 6vh;
   text-decoration : underline;
   display: flex;
   justify-content: center;
@@ -71,20 +94,22 @@
 .image{
   width: 33vh;
   height: 33vh;
+  border-radius: 50%;
 }
 
 .list-text {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 22px;
-  line-height: 50px;
   width: 33vh;
 }
 
 
 .list-description {
   font-size: 18px;
-  margin-top: 20px;
   width: 33vh;
+  margin-bottom: 10vh;
 }
 
 .show{
@@ -93,9 +118,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10vh;
+  font-family: 'arial unicode ms'
 }
 
 .show-title{
-  font-size: 5vh;
+  font-size: 6vh;
   margin-bottom: 2vh;
 }

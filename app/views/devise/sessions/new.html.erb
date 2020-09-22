@@ -1,0 +1,26 @@
+<div class="login-all">
+  <%= link_to image_tag('gobou.png' , size: '130x30'), "/", class: "rogo-login"%>
+  <div class="login-page">
+    <h1 class= "login-title">LOG IN</h1>
+    <%= form_with model: @user, url: new_user_session_path, class: "login", local: true do |f| %>
+      <label class="email">
+        e-mail
+      </label>
+        <div>
+          <%= f.email_field :email, class: "form", placeholder: "登録時のメールアドレス" %>
+        </div>
+      <label class="password">
+        password
+      </label>
+        <div>
+          <%= f.password_field :password, class: "form", placeholder:"登録時の6桁以上の英数字" %>
+        </div>
+      <div class="login-signup">
+        <%= f.submit "ログイン", class: "login-btn" %>
+        <div>
+          <%= link_to 'SAIN UP', new_user_registration_path, class: "go" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
