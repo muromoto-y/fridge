@@ -64,7 +64,7 @@
   <h2 class='show-title'>
     〜最新レシピ〜
   </h2>
-  <%= link_to 'レシピ投稿', "new_cooking_path" , class: "subtitle" %>
+  <%= link_to 'レシピ投稿', new_cooking_path , class: "subtitle" %>
   <ul class='cooking-list'>
     <% @cookings.each do |cooking| %>
       <li class='show-list'>
