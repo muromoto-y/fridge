@@ -16,7 +16,7 @@
     <div class="cooking-title">
       料理名
     </div>
-      <%= f.text_field :cooking_name, class:"cooking-text", placeholder:"40文字まで", maxlength:"40" %> 
+      <%= f.text_field :cooking_name, class:"cooking-title-text", placeholder:"40文字まで", maxlength:"40" %> 
   </div>
 
   <div class= "ingredients">
@@ -25,7 +25,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material1, placeholder:"例: 人参"%> 
+        <%= f.text_field :ingredients1, placeholder:"例: 人参", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -33,7 +33,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity1, placeholder:"例: 1本"%> 
+        <%= f.text_field :quantity1, placeholder:"例: 1本", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material2, placeholder:"例: 豚肉"%> 
+        <%= f.text_field :ingredients2, placeholder:"例: 豚肉", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -52,7 +52,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity2, placeholder:"例: 200g"%> 
+        <%= f.text_field :quantity2, placeholder:"例: 200g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material3, placeholder:"例: じゃがいも"%> 
+        <%= f.text_field :ingredients3, placeholder:"例: じゃがいも", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -71,7 +71,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity3, placeholder:"例: 3個"%> 
+        <%= f.text_field :quantity3, placeholder:"例: 3個", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -82,7 +82,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material4, placeholder:"例: 玉ねぎ"%> 
+        <%= f.text_field :ingredients4, placeholder:"例: 玉ねぎ", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -90,7 +90,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity4, placeholder:"例: 1個"%> 
+        <%= f.text_field :quantity4, placeholder:"例: 1個", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -101,7 +101,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material5, placeholder:"例: 水"%> 
+        <%= f.text_field :ingredients5, placeholder:"例: 水", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -109,7 +109,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity5, placeholder:"例: 200g"%> 
+        <%= f.text_field :quantity5, placeholder:"例: 200g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material6, placeholder:"例: 醤油"%> 
+        <%= f.text_field :ingredients6, placeholder:"例: 醤油", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -128,7 +128,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity6, placeholder:"例: 30g"%> 
+        <%= f.text_field :quantity6, placeholder:"例: 30g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -139,7 +139,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material7, placeholder:"例: 酒"%> 
+        <%= f.text_field :ingredients7, placeholder:"例: 酒", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -147,7 +147,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity7, placeholder:"例: 30g"%> 
+        <%= f.text_field :quantity7, placeholder:"例: 30g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -158,7 +158,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material8, placeholder:"例: 砂糖"%> 
+        <%= f.text_field :ingredients8, placeholder:"例: 砂糖", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -166,7 +166,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity8, placeholder:"例: 30g"%> 
+        <%= f.text_field :quantity8, placeholder:"例: 30g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -177,7 +177,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material9, placeholder:"例: みりん"%> 
+        <%= f.text_field :ingredients9, placeholder:"例: みりん", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -185,7 +185,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity9, placeholder:"例: 30g"%> 
+        <%= f.text_field :quantity9, placeholder:"例: 30g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -196,7 +196,7 @@
         材料名
       </div>
       <div>
-        <%= f.text_field :material0, placeholder:"例: 顆粒和風だし"%> 
+        <%= f.text_field :ingredients0, placeholder:"例: 顆粒和風だし", class: "cooking-form"%> 
       </div>
     </div>
     <div class= "ingredients-line">
@@ -204,7 +204,7 @@
         分量
       </div>
       <div>
-        <%= f.text_field :quantity0, placeholder:"例: 7g"%> 
+        <%= f.text_field :quantity0, placeholder:"例: 7g", class: "cooking-form"%> 
       </div>
     </div>
   </div>
@@ -216,12 +216,12 @@
     <div class="weight-bold-text">
       調理の説明
     </div>
-      <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"調理の説明（必須 1,000文字まで）" ,rows:"7" ,maxlength:"1000" %> 
+      <%= f.text_area :explanation, class:"cooking-text", id:"item-info", placeholder:"調理の説明（必須 1,000文字まで）" ,rows:"7" ,maxlength:"1000" %> 
   </div>
 
 
-  <div class="sell-btn-contents">
-    <%= f.submit "出品する" ,class:"sell-btn" %>
+  <div class="post-btn-contents">
+    <%= f.submit "投稿する" ,class:"post-btn" %>
     <%=link_to 'もどる', root_path, class:"back-btn" %>
   </div>
   <% end %>
