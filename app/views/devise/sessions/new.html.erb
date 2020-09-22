@@ -1,8 +1,8 @@
-<div class="items-sell-header">
-  <%= link_to image_tag('gobou.png' , size: '130x30'), "/", class: "rogo"%>
+<div class="login-all">
+  <%= link_to image_tag('gobou.png' , size: '130x30'), "/", class: "rogo-login"%>
   <div class="login-page">
     <h1 class= "login-title">LOG IN</h1>
-    <%= form_with url:new_user_session_path, class: "login", local: true do |f| %>
+    <%= form_with model: @user, url: new_user_session_path, class: "login", local: true do |f| %>
       <label class="email">
         e-mail
       </label>
@@ -18,7 +18,7 @@
       <div class="login-signup">
         <%= f.submit "ログイン", class: "login-btn" %>
         <div>
-          <%= link_to 'SAIN UP', new_user_registration_path, class: "signup" %>
+          <%= link_to 'SAIN UP', new_user_registration_path, class: "go" %>
         </div>
       </div>
     <% end %>
