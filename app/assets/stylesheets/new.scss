@@ -28,5 +28,51 @@
   
 .login-title{
   padding: 2vh 
-  // border: 1px solid green
 }
+
+.login-signup{
+  margin: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form{
+width: 100%;
+margin-top: 5px;
+height: 20px;
+padding: 3px 5px 3px;
+border: 1.5px solid grey;
+background: #fff;
+font-size: 16px;
+resize: none;
+border-radius:10px;
+}
+
+.signup{
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vh;
+}
+
+
+
+.login-btn {
+  width: 100%;
+  background-color: #69f3e8;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  border: 1px solid gray;
+  color: #fff;
+  line-height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius:10px;
+  color: gray;
+}
+.login-btn:hover {
+  background-color: #24e779;
+  }
