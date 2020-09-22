@@ -4,6 +4,27 @@
 
 .login-out{
   list-style: none;
+  display: flex;
+}
+
+.nickname-top{
+  font-family: 'arial unicode ms';
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  font-size: 3vh;
+  margin-right: 15px;
+  text-shadow:
+    0.1px 0 0 black,
+    0 0.1px 0 black,
+    -0.1px 0 0 black,
+    0 -0.1px 0 black
+}
+.nickname-top:hover {
+  color: lawngreen;
 }
 
 .login-icon{

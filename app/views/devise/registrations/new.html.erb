@@ -3,11 +3,11 @@
   <div class="login-page">
     <h1 class= "login-title">SIGN UP</h1>
     <%= form_with model: @user, url: user_registration_path, class: "signup", local: true do |f| %>
-       <label class="nickname">
+      <label class="nickname">
         nick name
       </label>
         <div>
-          <%= f.text_field :nick_name, class: "form", placeholder: "ニックネーム" %>
+          <%= f.text_field :nickname, class: "form", placeholder: "ニックネーム" %>
         </div>
       <label class="email">
         e-mail
@@ -24,9 +24,9 @@
       <label class="password-confirmation">
         password_confirmation
       </label>
-    <div>
-      <%= f.password_field :password_confirmation, class: "form" %>
-    </div>
+        <div>
+          <%= f.password_field :password_confirmation, class: "form" %>
+        </div>
       <div class="login-signup">
         <%= f.submit "登録", class: "login-btn" %>
         <div>
