@@ -1,5 +1,6 @@
 .header{
   display: flex;
+  color: black;
 }
 
 .login-out{
@@ -7,24 +8,25 @@
   display: flex;
 }
 
+#nav li a span.en {
+
+  display: inline;
+}
+#nav li a:hover span.en {
+  display: none;
+}
+#nav li a span.jp {
+  display: none;
+}
+#nav li a:hover span.jp {
+  display: inline;
+}
+
 .nickname-top{
   font-family: 'arial unicode ms';
   text-decoration: none;
-  color: black;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all  0.3s ease;
   font-size: 3vh;
   margin-right: 15px;
-  text-shadow:
-    0.1px 0 0 black,
-    0 0.1px 0 black,
-    -0.1px 0 0 black,
-    0 -0.1px 0 black
-}
-.nickname-top:hover {
-  color: lawngreen;
 }
 
 .login-icon{
@@ -125,3 +127,45 @@
   font-size: 6vh;
   margin-bottom: 2vh;
 }
+
+.subtitle{
+  text-decoration: none;
+  font-size: 3vh;
+  color: blue;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+.subtitle:hover {
+  color: lightseagreen;
+}
+
+
+.cooking-list{
+  list-style: none;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-list{
+  width: 20vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+
+.cooking-img{
+ width: 20vh;
+height: 20vh;
+}
+
+.cooking-name{
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: black;
+}
+
