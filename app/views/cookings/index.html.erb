@@ -3,12 +3,15 @@
 
   <ul class='login-out'>
     <% if user_signed_in? %>
-      <li><%= link_to current_user.nick_name, "", class: "nickname-top" %></li>
+      <div id="nav">
+        <li class= "nickname-top"><a href=""><span class="en"><%=current_user.nick_name%></span><span class="jp">マイページへ</span></a></li>
+      </div>
       <li><%= link_to image_tag("logout.png", class: "logout-icon"), destroy_user_session_path, method: :delete, class: "logout" %></li>
-    <% else %> 
+    <% else %>  
       <li><%= link_to image_tag("login.png", class: "login-icon"), new_user_session_path, class: "login" %></li>
     <% end %>
-  </ul>
+  </ul> 
+
 </div>
 
 
@@ -70,11 +73,11 @@
       <li class='show-list'>
         <%= link_to cooking_path(cooking) do %>
           <div>
-            <%= image_tag cooking.image, class: "item-img" %>
+            <%= image_tag cooking.image, class: "cooking-img" %>
           </div>
-          <h3 class='cooking-name'>
+          <div class='cooking-name'>
             <%= cooking.cooking_name %>
-          </h3>
+          </div>
         <% end %>
       </li>
     <% end %>
