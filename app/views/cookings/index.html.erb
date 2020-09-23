@@ -20,7 +20,7 @@
     Fridge!で冷蔵庫を整理しよう！！
   </h3>
   <%= form_with(url: "", method: :get, class: "search", local: true) do |f| %>
-    <%= f.text_field :keyword, placeholder: "料理名、材料", class: "search-input" %>
+    <%= f.text_field :keyword, placeholder: "材料名", class: "search-input" %>
     <%= f.submit "レシピ検索", class: "search-btn" %>
   <% end %>
 </div>
@@ -83,3 +83,10 @@
     <% end %>
   </ul>
 </div>
+
+<p class="inc">
+  <%= link_to image_tag('gobou.png' , size: '130x30'), "/" %>
+  <div>
+    ©︎Fridge!,Inc.
+  </div>
+</p>
