@@ -50,5 +50,9 @@
         <td class="detail-value"><%= @cooking.explanation %></td>
       </tr>
     </table>
-       <%=link_to 'もどる', root_path, class:"back-btn" %>
+    <%= link_to :back do %>
+      <div class="back-btn">
+        もどる
+      </div>
+    <% end %>
 </div>

@@ -11,5 +11,12 @@ class Cooking < ApplicationRecord
     validates :quantity1 
   end
 
+  def self.search(search)
+    if search != ""
+      Cooking.where('explanation LIKE(?)', "%#{search}%")
+    else
+      Cooking.all
+    end
+  end
 
 end
