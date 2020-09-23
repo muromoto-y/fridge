@@ -21,6 +21,10 @@ class CookingsController < ApplicationController
     @cooking = Cooking.find(params[:id])
   end
 
+  def search
+    @cookings = Cooking.search(params[:keyword])
+  end
+
   private
 
   def cooking_params
