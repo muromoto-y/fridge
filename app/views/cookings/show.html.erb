@@ -1,0 +1,54 @@
+<div class="item-show">
+  <%= link_to image_tag("gobou.png", size: '150x40'), "/", class: "rogo-show"%>
+
+    <%= form_with(url: "", method: :get, class: "search", local: true) do |f| %>
+      <%= f.text_field :keyword, placeholder: "材料名", class: "search-input" %>
+      <%= f.submit "レシピ検索", class: "search-btn" %>
+    <% end %>
+    <h2 class="name">
+      <%= @cooking.cooking_name%>
+    </h2>
+  <div>
+    <%= image_tag @cooking.image ,class:"item-box-img" %>
+  </div>
+    <table class="detail-table">
+      <th class="detail-item">材料</th>
+      <td class="detail-value">
+        <% if @cooking.ingredients1.present?%>
+          <P><%= @cooking.ingredients1 %>・・・<%= @cooking.quantity1 %></p>
+        <%end%>
+        <% if @cooking.ingredients2?%>
+          <P><%= @cooking.ingredients2 %>・・・<%= @cooking.quantity2 %></p>
+        <%end%>
+        <% if @cooking.ingredients3.present?%>
+          <P><%= @cooking.ingredients3 %>・・・<%= @cooking.quantity3 %></p>
+        <%end%>
+        <% if @cooking.ingredients4.present?%>
+          <P><%= @cooking.ingredients4 %>・・・<%= @cooking.quantity4 %></p>
+        <%end%>
+        <% if @cooking.ingredients5.present?%>
+          <P><%= @cooking.ingredients5 %>・・・<%= @cooking.quantity5 %></p>
+        <%end%>
+        <% if @cooking.ingredients6.present?%>
+          <P><%= @cooking.ingredients6 %>・・・<%= @cooking.quantity6 %></p>
+        <%end%>
+        <% if @cooking.ingredients7.present?%>
+          <P><%= @cooking.ingredients7 %>・・・<%= @cooking.quantity7 %></p>
+        <%end%>
+        <% if @cooking.ingredients8.present?%>
+          <P><%= @cooking.ingredients8 %>・・・<%= @cooking.quantity8 %></p>
+        <%end%>
+        <% if @cooking.ingredients9.present?%>
+          <P><%= @cooking.ingredients9 %>・・・<%= @cooking.quantity9 %></p>
+        <%end%>
+        <% if @cooking.ingredients0.present?%>
+          <P><%= @cooking.ingredients0 %>・・・<%= @cooking.quantity0 %></p>
+        <%end%>
+      </td>
+      <tr>
+        <th class="detail-item">調理説明</th>
+        <td class="detail-value"><%= @cooking.explanation %></td>
+      </tr>
+    </table>
+       <%=link_to 'もどる', root_path, class:"back-btn" %>
+</div>
