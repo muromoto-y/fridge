@@ -1,7 +1,6 @@
 class Cooking < ApplicationRecord
   
-  has_many :bookmarks
-  has_many :users, through: :bookmarks
+  belongs_to :user
   has_one_attached :image
 
   with_options presence: true do
