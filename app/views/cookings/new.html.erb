@@ -1,6 +1,7 @@
 <%= link_to image_tag("gobou.png", size: '150x40'), "/", class: "rogo-cooking-new"%>
 <div class="cooking-new-all">
   <%= form_with model:@cooking, url:cookings_path, local: true do |f| %>
+
     <h2 class="make-title">
       自分のレシピを教える
     </h2>
